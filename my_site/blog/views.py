@@ -10,15 +10,15 @@ all_posts = [
         "author": "InnoCoda",
         "date": date(2026, 1, 19),
         "title": "Dasert",
-        "excerpt": "There's nothing like the viewa you get when hiking in the moutain",
-        "content": """ My goal is to keep on growing as a developer - and if i could 
+        "excerpt": "There's nothing like the view, you get when you getto the top of hiking moutain",
+        "content": """My goal is to keep on growing as a developer - and if i could 
                                 help you do the same, I'd be very happy!""",
     },
     {
         "slug": "programing",
         "image": "innocoda.png",
         "author": "InnoCoda",
-        "date": date(2026, 1, 9),
+        "date": date(2024, 1, 9),
         "title": "God's Wills",
         "excerpt": "They is all ways God by my side all time ",
         "content": """ My goal is to keep on growing as a developer - and if i could 
@@ -28,9 +28,9 @@ all_posts = [
         "slug": "Coding-is-life",
         "image": "image.png",
         "author": "InnoCoda",
-        "date": date(2026, 1, 19),
+        "date": date(2025, 1, 20),
         "title": "Coding is life",
-        "excerpt": "There's nothing like seeing your, code making you money ",
+        "excerpt": "There's nothing like seeing your code making you money ",
         "content": """ My goal is to keep on growing as a developer - and if i could 
                                 help you do the same, I'd be very happy!""",
     }
