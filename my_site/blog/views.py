@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from datetime import date
+from django.http import Http404
 
 # Create your views here.
 
@@ -26,7 +27,7 @@ all_posts = [
     },
     {
         "slug": "Coding-is-life",
-        "image": "image.png",
+        "image": "coding.png",
         "author": "InnoCoda",
         "date": date(2025, 1, 20),
         "title": "Coding is life",
@@ -54,5 +55,10 @@ def posts(request):
 
 
 def post_detail(request, slug):
-    identiend_post = next(post for post in all_posts if post['slug'] == slug)
+    identiend_post = next(
+        (post for post in all_posts if post['slug'] == slug), None)
+
+    if identiend_post is None:
+        return render(request, "404.html", status=404)
+
     return render(request, "blog/post-detail.html", {"post": identiend_post})
