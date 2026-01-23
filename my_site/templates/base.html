@@ -10,9 +10,11 @@
 </head>
 <body>
         <header id="main-navigation" >
-            <h1><a href="">InnoCoda's Blog</a></h1>
+             <a href="{% url 'starting-page' %}">
+                <h2>InnoCent's BLOG</h2>
+            </a>
             <nav>
-                <a href="">All Posts</a>
+                <a href="{% url 'posts-page' %}">All Posts</a>
             </nav>
         </header>
 

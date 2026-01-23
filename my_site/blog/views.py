@@ -61,4 +61,4 @@ def post_detail(request, slug):
     if identiend_post is None:
         return render(request, "404.html", status=404)
 
-    return render(request, "blog/post-detail.html", {"post": identiend_post})
+    return render(request, "blog\post-detali.html", {"post": identiend_post})
